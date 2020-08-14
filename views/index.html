@@ -1,0 +1,91 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ramp Up 2020 - Emotion Analyzer</title>
+    <meta
+      name="description"
+      content="OAuth 2 Authorization Code Flow example for Spotify."
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.com/project-avatar/b96c147f-8065-40a6-9908-4fcafce2a361.png"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Ramp Up 2020 - Emotion Analyzer
+      </h1>
+      <span>
+        Find out what emotions your most listened songs echoes.
+      </span><br><br>
+      <span style="font-style: italic;">Made for Spotify's Ramp Up 2020 by Sebastian Hafström and Carl Östling</span>
+    </header>
+    <hr />
+    <main>
+      <button class="btn btn-primary" id="login">
+        Log in to get started!
+      </button>
+      <a href="/logout" class="btn btn-secondary" id="logout">Logout</a>
+      <hr />
+      <div class="container-fluid" id="main">
+        <div class="row">
+          <div class="col-6">
+            <div id="data-container">
+              <ol id="data-container-tracks">
+                <!-- This is where we will append our data -->
+              </ol>
+            </div>
+          </div>
+          <div class="col-6" id="summedEmotions">
+          </div>
+        </div>
+        
+      </div>
+      
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
