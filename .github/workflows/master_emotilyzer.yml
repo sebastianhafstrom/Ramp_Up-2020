@@ -20,15 +20,16 @@ jobs:
       with:
         node-version: '10.x'
 
-    - name: npm install and build
+    - name: npm install, build, and test
       run: |
         npm install
         npm run build --if-present
+        npm run test --if-present
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'emotilyzer'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_741b5d17741e4a1dad9fed14c8be0c44 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_74534a60377b4a018c8000e353f69a78 }}
         package: .
