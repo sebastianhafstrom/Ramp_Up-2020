@@ -3,6 +3,7 @@
 
 // init project
 var express = require('express');
+require('custom-env').env()
 var app = express();
 const fetch = require("node-fetch");
 const Musixmatch = require('musixmatch-node')
