@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/6f43d559-5261-4e2a-a6c1-4a580651546a/resourceGroups/RampUp/providers/Microsoft.Web/sites/emotilyzer",
+    "appService.deploySubpath": "."
+}
