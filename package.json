@@ -18,7 +18,7 @@
     "node": "10.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/welcome-project"
+    "url": "git+https://github.com/Hafmaestro/Ramp_Up-2020"
   },
   "license": "MIT",
   "keywords": [
