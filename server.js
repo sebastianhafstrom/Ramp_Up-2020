@@ -130,9 +130,10 @@ function formatLyrics (lyrics){
 
 
 //-------------------------------------------------------------//
+const port = process.env.PORT || 3000
 
 
 // listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + process.env.PORT);
+var listener = app.listen(port, function () {
+  console.log(`Your app is listening on port ${port}`);
 });
