@@ -1,0 +1,6 @@
+projectKey=Rampu_Up:Project
+serverUrl=http://localhost:9000
+serverVersion=8.4.2.36762
+dashboardUrl=http://localhost:9000/dashboard?id=Rampu_Up%3AProject
+ceTaskId=AXRJVXvdPaLGwzcfBZ_L
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXRJVXvdPaLGwzcfBZ_L

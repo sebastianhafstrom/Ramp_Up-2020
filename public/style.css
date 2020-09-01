@@ -20,17 +20,12 @@ body {
   background-size: contain;
   height: 100%;
   margin: 0;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 
 }
 
 #main {
   padding-top: 10px;
-}
-
-btn-primary{
-  float:left;
 }
 
 h1,h3{

@@ -101,7 +101,6 @@ app.get("/analyze-song", async function (request, response) {
   }
   lyrics = formatLyrics(lyrics)
   
-  var mainTone;
   if (!lyrics) {
     response.send('No lyrics for this song')
     return
